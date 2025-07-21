@@ -1,0 +1,296 @@
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family:   'Lucida Sans', Arial, sans-serif;
+scroll-behavior: smooth;
+}
+
+.navbar {
+   background: bisque;
+   padding: 1rem 4rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   top: 0;
+   height: 80px;
+   position: sticky;
+}
+
+li {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+   font-weight: bold;
+   font-size: 18px;
+   font-style: italic;
+   color: black;
+}
+
+.navbar ul {
+   display: flex;
+   align-items: center;
+   gap: 40px;
+}
+
+.navbar ul  li a::after {
+   content: "";
+   display: block;
+   width: 0;
+   height: 2px;
+   background: black;
+   margin-right: auto;
+   transition: 0.3s;
+}
+
+.navbar ul li a:hover::after {
+   width: 100%;
+}
+
+.sections {
+   height: calc(100vh-80px);
+   display: flex;
+   align-items: center;
+   margin: 5rem;
+}
+
+.left {
+   width: 50%;
+}
+
+.btn {
+   margin-top: 15px;
+   padding: 12px 30px;
+   font-weight: bold;
+   background: orangered;
+}
+
+.btn:hover {
+   background: orange;
+}
+
+.right img {
+  width: 320px;
+}
+
+#menu {
+   padding: 100px 4rem;
+}
+
+#menu h2 {
+   text-align: center;
+   text-decoration: underline;
+   font-weight: 600;
+}
+
+.menu-container {
+   padding: 80px 4rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 40px;
+}
+
+.menu-item {
+   background: black;
+   color: white;
+   width: 320px;
+   border-radius: 20px;
+}
+
+.menu-item img {
+   width: 100%;
+   object-fit: cover;
+   height: 180px;
+}
+
+.menu-item p {
+   padding: 20px;
+}
+
+.submit {
+   padding: 12px 30px;
+   margin-left: 20px;
+   margin-bottom: 5px;
+   background: orangered;
+   border-radius: 6px;
+}
+
+/*Trending*/
+
+#Trending {
+   padding: 60px 4rem;
+}
+
+#Trending h2 {
+   text-align: center;
+   font-weight: bold;
+   margin: 10px;
+}
+
+.trend-container {
+   box-shadow: 0 5px 30px 0;
+   padding: 45px 5rem;
+   margin-top: 15px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 40px;
+   flex-wrap: wrap;
+}
+
+.trend-item { 
+   width: 320px;
+}
+
+.trend-item img {
+   width: 100%;
+   object-fit: cover;
+}
+
+.trend-item:hover {
+   transform: scale(1.3);
+}
+
+.trend-item h3 {
+   padding: 10px;
+   text-align: center;
+}
+
+.menu-icon {
+   font-size: 24px;
+   cursor: pointer;
+   display: none;
+}
+ 
+#review {
+   padding: 100px 4rem;
+}
+
+#review h2 {
+   text-align: center;
+   font-weight: bold;
+}
+
+.review-container {
+   padding: 60px 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 40px;
+   border-radius: 20px;
+}
+
+.review-item {
+   background: black;
+   color: white;
+   border-radius: 20px;
+   width: 320px;
+   text-align: center;
+   padding: 20px;
+}
+
+.review-item img {
+   width: 120px;
+   height: 120px;
+   border-radius: 50%;
+}
+
+#blogs {
+   padding: 80px 0;
+}
+
+#blogs h2 {
+   text-align: center;
+}
+
+.blogs-container {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    transition: 0.6s;
+}
+
+.blogs-item {
+   width: 300px;
+   background: black;
+   border-radius: 20px;
+}
+
+.blogs-item img {
+   width: 100%;
+   height: 180px;
+}
+
+.blogs-item:hover {
+   transform: scale(1.1)translateY(-5px);
+}
+
+.contact {
+   background-color: black;
+   text-align: center;
+}
+
+input {
+   margin: 10px;
+   padding: 10px;
+   width: 50%;
+   border-radius: 15px;
+   border: none;
+   font-size: 18px;
+}
+
+textarea {
+   width: 50%;
+   border-radius: 10px;
+}
+
+button {
+   padding: 10px;
+   font-weight: bold;
+   border-radius: 5px;
+}
+
+
+/*Responsive*/
+
+@media (max-width:800px) {
+   .navbar ul {
+      position: absolute;
+      top: 80px;
+      left: 0;
+      right: 0;
+      background: black;  
+      flex-direction: column;
+      overflow: hidden;
+      transition: max-height 0.5s;
+   }
+   .navbar a {
+      color: white; 
+   }
+   .navbar ul li:last-child {
+      padding-bottom: 40px;
+   }
+   .menu-icon {
+      display: block;
+   }
+   .menu-item img {
+      width: 250px;
+   }
+   .sections {
+      flex-direction: column;
+      height: auto;
+      padding-top: 40px;
+      padding-bottom: 0;
+   }
+   .sections .left, .sections .right {
+      width: 100%;
+   } 
+}
