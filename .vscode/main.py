@@ -1,2 +1,0 @@
-User = 'hello';
-print(User);
