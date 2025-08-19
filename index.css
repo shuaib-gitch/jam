@@ -14,7 +14,6 @@ scroll-behavior: smooth;
    justify-content: space-between;
    top: 0;
    height: 80px;
-   position: sticky;
 }
 
 li {

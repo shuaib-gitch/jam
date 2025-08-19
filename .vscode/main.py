@@ -1,0 +1,2 @@
+User = 'hello';
+print(User);

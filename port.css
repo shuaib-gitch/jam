@@ -1,0 +1,227 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: Arial, Helvetica, sans-serif;
+   scroll-behavior: smooth;
+   background-color: black;
+}
+
+.navbar {
+   background-color: aqua;
+   margin: 2px;
+   padding: 1rem 4em;
+   top: 0;
+   height: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   position: sticky;
+}
+
+.navbar ul {
+   list-style: none;
+   display: flex;
+   gap: 40px;
+}
+a {
+   text-decoration: none;
+   font-weight: bold;
+   color: black;
+}
+
+.navbar a::after {
+   content: "";
+   width: 0;
+   display: block;
+   height: 2px;
+   background: black;
+   margin-right: auto;
+   transition: 0.6s;
+}
+
+.navbar a:hover::after {
+   width: 100%;
+}
+
+.logo {
+  color: brown;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.logo:hover {
+   color: chocolate;
+}
+
+.left {
+   padding: 30px;
+   margin: 4em;
+   display: flex;
+}
+
+.left img {
+   border-radius: 20px;
+}
+
+.left h2 {
+   margin: 4em;
+   color: white;
+}
+
+span {
+   color: brown;
+}
+
+.comtent {
+  margin-top: 30px; 
+}
+
+/*.content::after {
+   content: "";
+   animation: 6s swap infinite;
+   color: brown;
+}
+
+@keyframes swap {
+   50% {
+      content: "Free lancer web development";
+   }
+   75% {
+      content: "E-commerce Website Development";
+   }
+   80% {
+      content: 'Software Engineering';
+   }
+   85% {
+      content: 'Networking';
+   }
+   100% {
+      content: 'IOS Developer';
+   }
+}*/
+
+h3 {
+   text-align: center;
+   font-size: 20px;
+   font-weight: 600;
+   color: white;
+}
+
+.service-list {
+   padding: 4rem ;
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 40px;
+}
+
+.service-container {
+   background: #262626;
+   padding: 10px;
+   width: 300px;
+   border-right: 10px;
+   transition: backgrond 0.5s, transform 0.5s;
+}
+
+.service-container .services {
+   text-align: center;
+   margin-top: 8px;
+   margin-bottom: 10px;
+}
+
+.service-container:hover {
+   background-color: #ff004f;
+   color: white;
+   transform: translateY(-10px);
+}
+
+.service-container i {
+   font-size: 50px;
+   padding-left: 7rem;
+   margin-top: 8px;
+}
+
+.service-container p {
+margin: 2rem 4px;
+}
+
+.learn {
+   font-weight: bold;
+}
+.container {
+   color: white;
+   display: flex;
+   justify-content: space-between;
+}
+
+.contact-right {
+   padding-right: 25rem;
+   margin-top: 9rem;
+}
+
+.contact-left h2 {
+   font-size: 50px;
+   margin-top: 10rem;
+   padding: 15px;
+}
+
+.contact-left p i {
+   padding: 15px;
+   font-weight: bold;
+   color: #ff004f;
+}
+
+form input, form textarea {
+   width: 30rem;
+   margin: 10px;
+   padding: 10px;
+   border-radius: 5px;
+   border: none;
+   outline: none;
+   letter-spacing: 2px;
+   background:#262626 ;
+   color: white;
+}
+
+.submit {
+   padding: 14px 60px;
+   margin-top: 20px;
+   font: bold;
+   background-color: #ff004f;
+   color: white;
+   border-radius: 8px;
+   margin-left: 10rem;
+}
+
+.icons a i {
+   color: white;
+   padding-left: 25px;
+   margin-top: 4rem;
+   transition: background 0.2s transform 2s;
+}
+
+.icons a i:hover {
+   color: #ff004f;
+   transform: translateY(-10px);
+}
+
+.copy{
+   width: 100%;
+   text-align: center;
+   color: white;
+   padding: 10px 0;
+   background: #262626;
+   margin: 15px;
+}
+
+/*Responsive site*/
+
+@media only screen and (max-widtth: 600px) {
+   
+}

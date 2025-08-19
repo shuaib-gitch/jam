@@ -1,5 +1,10 @@
-let menuBar = document.getElementById("menuBar")
-let menuIcon = document.getElementById("menuIcon")
+ if (sessionStorage.getItem('formDone') !== 'yes') {
+      window.location.href = "form.html";
+      console.log('session value:', sessionStorage.getItem('formDone'));
+   } 
+
+   let menuBar = document.getElementById("menuBar")
+   let menuIcon = document.getElementById("menuIcon")
 
 menuBar.style.maxHeight = "0px";
 
@@ -10,4 +15,4 @@ menuIcon.addEventListener("click", () => {
    else {
       menuBar.style.maxHeight = "0px"
    }
-})
+});

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="form.css">
+</head>
+<body>
+   <form action="" id="loginForm">
+      <div class="login">
+         <h2>LOG IN</h2>
+         <p class="msg" id="errorMssg">Invalid login parameter</p>
+         <input type="text" id="username" autocomplete="username" placeholder="Username"><br>
+         <input type="password" id="password" autocomplete="password" placeholder="Password"> <br>
+         <button class="submit">login</button>
+         <P>Don't have account yet? <a href="./form.html">sign up</a></P>
+      </div>
+   </form>
+   <script>
+      document.getElementById('loginForm').addEventListener('submit', ((event) => {
+         event.preventDefault();
+
+         let Username = document.getElementById('username').value;
+         let Password = document.getElementById('password').value;
+
+         let web_name = "Akande";
+         let web_password = "code1234";
+
+         if(Username === web_name && Password === web_password){
+            window.location.href="index.html";
+            sessionStorage.setItem('formDone', 'yes');
+         }
+         else {
+            document.getElementById("errorMssg").style.display="block";
+            document.getElementById("errorMssg").style.color="red";
+         }
+      }))
+   </script>
+</body>
+</html>
